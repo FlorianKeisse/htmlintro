@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DCE1E3;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MY PORTFOLIO</h1>
+<hr>
+
+<h2>Here we will have some work of the past year</h2>
+<p>And some info with it.</p>
+
+<!-- Portfolio Gallery Grid -->
+
+<div class="content">
+  <img src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.6435-9/32839151_1571060026336044_399180191840075776_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=OgNd0cBt-UgAX87RtuK&tn=m77fo3f9IszdQaR8&_nc_ht=scontent-bru2-1.xx&oh=1bfde28fca25563f6cc469656ce4ad9e&oe=614D0CF8" alt="FlorianKeisse" style="width:25%">
+  <h3>Info About Myself</h3>
+  <p>I started my Java Development course at INTEC BRUSSELS on januari 25th. This means i have been at it for a few months and i'm very happy with the decision i made.
+  i'm learning new things everyday and hope to be a good programmer one day.</p>
+  <p>I got interested in computers from a young age, i already tried to binge the computer since i was a kid and that hasn't changed yet.</p>
+  <p>Here are some links for the Github Examples:</p>
+  <p>'The T4sseract bot' https://github.com/FlorianKeisse/GtaVFishingBot</p>
+  <p>'The Design Pattern' https://github.com/FlorianKeisse/NewSchoolisOut/tree/main/src/main/java/com/demo/hibernate/school/service</p>
+</div>
+
+
+
+<!-- END GRID -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://github.com/FlorianKeisse/GtaVFishingBot/blob/main/src/main/resources/test.png?raw=true" alt="TestPicture" style="width:100%">
+      <h3>First "creative" work</h3>
+      <p>Making a bot that plays part of the game for me while using t4sseract. This is an OCR "Optical Character Recognition". The picture you see is the one used for testing. For more information please let me know.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2019/07/design-patterns-everywhere.jpg" alt="Lights" style="width:100%">
+      <h3>First use of "design pattern"</h3>
+      <p>Here i made use of an interface design pattern.While just getting to know a basic design pattern, working with them is pretty fun! I also think it makes it easier for readability afterwards. I will provide a link to my referenced GithubPage.  </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+    </div>
+  </div>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
