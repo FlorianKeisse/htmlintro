@@ -4,7 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -32,12 +34,14 @@ h1 {
 .row,
 .row > .column {
   padding: 8px;
+
 }
 
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
+  height: 25%
 }
 
 /* Clear floats after rows */ 
@@ -50,7 +54,10 @@ h1 {
 /* Content */
 .content {
   background-color: white;
-  padding: 10px;
+ flex-basis: 25%;
+
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -66,13 +73,42 @@ h1 {
     width: 100%;
   }
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
 </style>
 </head>
 <body>
 
 <!-- MAIN (Center website) -->
 <div class="main">
-
+<ul>
+ <li><a class="active" href="change.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="contactFormulier.html">Contact</a></li>
+  <li><a href="template.html">Projects</a></li>
+</ul>
 <h1>MY PORTFOLIO</h1>
 <hr>
 
@@ -82,14 +118,13 @@ h1 {
 <!-- Portfolio Gallery Grid -->
 
 <div class="content">
-  <img src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.6435-9/32839151_1571060026336044_399180191840075776_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=OgNd0cBt-UgAX87RtuK&tn=m77fo3f9IszdQaR8&_nc_ht=scontent-bru2-1.xx&oh=1bfde28fca25563f6cc469656ce4ad9e&oe=614D0CF8" alt="FlorianKeisse" style="width:25%">
+  <img src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.6435-9/32839151_1571060026336044_399180191840075776_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=OgNd0cBt-UgAX87RtuK&tn=m77fo3f9IszdQaR8&_nc_ht=scontent-bru2-1.xx&oh=1bfde28fca25563f6cc469656ce4ad9e&oe=614D0CF8" alt="FlorianKeisse" style="width:25%; float:left;">
   <h3>Info About Myself</h3>
-  <p>I started my Java Development course at INTEC BRUSSELS on januari 25th. This means i have been at it for a few months and i'm very happy with the decision i made.
-  i'm learning new things everyday and hope to be a good programmer one day.</p>
+  <p>I started my Java Development course at INTEC BRUSSELS on januari 25th. This means i have been at it for a few months and i'm very happy with the decision i made.i'm learning new things everyday and hope to be a good programmer one day.</p>
   <p>I got interested in computers from a young age, i already tried to binge the computer since i was a kid and that hasn't changed yet.</p>
   <p>Here are some links for the Github Examples:</p>
-  <p>'The T4sseract bot' https://github.com/FlorianKeisse/GtaVFishingBot</p>
-  <p>'The Design Pattern' https://github.com/FlorianKeisse/NewSchoolisOut/tree/main/src/main/java/com/demo/hibernate/school/service</p>
+  <p><b><a href=" https://github.com/FlorianKeisse/GtaVFishingBot" target="_blank">'click here for the T4sseract project</a></b></p>
+  <p><b><a href="https://github.com/FlorianKeisse/NewSchoolisOut/tree/main/src/main/java/com/demo/hibernate/school/service" target="_blank">click here for the Hibernate project</a></b></p>
 </div>
 
 
@@ -98,7 +133,7 @@ h1 {
 <div class="row">
   <div class="column">
     <div class="content">
-      <img src="https://github.com/FlorianKeisse/GtaVFishingBot/blob/main/src/main/resources/test.png?raw=true" alt="TestPicture" style="width:100%">
+	  <img src="https://github.com/FlorianKeisse/GtaVFishingBot/blob/main/src/main/resources/test.png?raw=true" alt="TestPicture" style="width:100%"/>
       <h3>First "creative" work</h3>
       <p>Making a bot that plays part of the game for me while using t4sseract. This is an OCR "Optical Character Recognition". The picture you see is the one used for testing. For more information please let me know.</p>
     </div>
@@ -112,14 +147,14 @@ h1 {
   </div>
   <div class="column">
     <div class="content">
-    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+    <img src="nature.jpg" alt="Nature" style="width:100%">
       <h3>My Work</h3>
       <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
     </div>
   </div>
   <div class="column">
     <div class="content">
-    <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+    <img src="mountains.jpg" alt="Mountains" style="width:100%">
       <h3>My Work</h3>
       <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
     </div>

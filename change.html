@@ -2,26 +2,157 @@
 <html>
 <head>
 <title>Florian Delorian</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width:25%;
+float: left-side;
+left:15%;
+
 }
 body {
-  background-color: lightblue;
+  background-color: #DCE1E3;
+  padding: 20px;
+  font-family: Arial;
+   background-image: url("https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
 }
-p { color: blue; text-align: center; }
-h1 { color: darkblue; text-align: center; }
 
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
 
+/* Create four equal columns that floats next to each other */
+.column {
+
+  float: left;
+  width: 20%;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Content */
+.content {
+
+  /* There will be 4 cards per row */
+    flex-basis: 25%;
+background-color:#DCE1E3;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+p { color: black; text-align: center; }
+h1 { color: white; text-align: center; }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: bottom;
+  width: 24.99999%;
+}
 </style>
 </head>
 <body> 
 
-<h1>Hedda Header Headaaa Hedr</h1>
+<ul>
+  <li><a class="active" href="change.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="contactFormulier.html">Contact</a></li>
+  <li><a href="template.html">Projects</a></li>
+</ul>
+<h1>HomePage of My Portfolio</h1>
 
-<p>dees is een para.</p>
-<img src="https://www.letseatcake.com/wp-content/uploads/2021/07/funny-memes-24.jpg">
-</body>
-</html>
+<div class="content">
+	<div class="align">
+<img src="https://cdn.pixabay.com/photo/2016/04/25/07/15/man-1351317_1280.png"style="width:25%; float:left;>
+<p id="p1"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+
+	</div>
+
+</div>
+
