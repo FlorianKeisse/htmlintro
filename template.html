@@ -97,7 +97,25 @@ li a {
 li a:hover {
   background-color: #111;
 }
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
 
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+footer {
+  position: fixed;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+  background: #666;
+  color: white;
+  text-align:center;
+}
 </style>
 </head>
 <body>
@@ -164,6 +182,8 @@ li a:hover {
 
 <!-- END MAIN -->
 </div>
-
+  <footer >
+      <p>Company © KeisseCorp. All rights reserved.</p>
+    </footer>
 </body>
 </html>
