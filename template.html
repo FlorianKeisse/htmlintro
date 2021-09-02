@@ -62,16 +62,19 @@ background-color: rgba(54, 25, 25, .5);
 
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
   }
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
     width: 100%;
   }
 }
@@ -143,10 +146,10 @@ footer {
   <img src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.6435-9/32839151_1571060026336044_399180191840075776_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=OgNd0cBt-UgAX87RtuK&tn=m77fo3f9IszdQaR8&_nc_ht=scontent-bru2-1.xx&oh=1bfde28fca25563f6cc469656ce4ad9e&oe=614D0CF8" alt="FlorianKeisse" style="width:25%; float:left; padding-right:15px;   border-radius: 200px;
 ">
   <h3>Info About Myself</h3>
-  <p>I started my Java Development course at INTEC BRUSSELS on januari 25th. This means i have been at it for a few months and i'm very happy with the decision i made.i'm learning new things everyday and hope to be a good programmer one day.</p>
+  <p>I started my Java Development course at INTEC BRUSSELS on januari 25th. This means i have been at it for a few months and i'm very happy with the decision i made. I'm learning new things everyday and hope to be a good programmer one day.</p>
   <p>I got interested in computers from a young age, i already tried to binge the computer since i was a kid and that hasn't changed yet.</p>
   <p>Here are some links for the Github Examples:</p>
-  <p><b><a href=" https://github.com/FlorianKeisse/GtaVFishingBot" target="_blank">'click here for the T4sseract project</a></b></p>
+  <p><b><a href=" https://github.com/FlorianKeisse/GtaVFishingBot" target="_blank">click here for the T4sseract project</a></b></p>
   <p><b><a href="https://github.com/FlorianKeisse/NewSchoolisOut/tree/main/src/main/java/com/demo/hibernate/school/service" target="_blank">click here for the Hibernate project</a></b></p>
 </div>
 
